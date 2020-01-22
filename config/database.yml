@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  adapter: sqlite3
+  database: db/rails_react_ssr_example_development.sqlite3
+
+test:
+  <<: *default
+  adapter: sqlite3
+  database: rails_react_ssr_example_test
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
