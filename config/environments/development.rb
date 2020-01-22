@@ -16,7 +16,7 @@ Rails.application.configure do
   # Run rails dev:cache to toggle caching.
   config.action_controller.perform_caching = true
 
-  config.cache_store = :memory_store
+  config.cache_store = :memory_store, {size: 64.megabytes}
   config.public_file_server.headers = {
       'Cache-Control' => "public, max-age=#{2.days.to_i}"
   }

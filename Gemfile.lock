@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/jefawks3/rails-react-ssr
+  revision: e206426e1658beda44ef6d4c01a052acd4568925
+  specs:
+    rails-react-ssr (0.1.0)
+      rails (~> 5.2.1)
+      webpacker (~> 4.0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -129,9 +137,6 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.3.0)
       loofah (~> 2.3)
-    rails-react-ssr (0.1.0)
-      rails (~> 5.2.1)
-      webpacker (~> 4.0.2)
     railties (5.2.4.1)
       actionpack (= 5.2.4.1)
       activesupport (= 5.2.4.1)
@@ -174,9 +179,6 @@ GEM
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
-    turbolinks (5.2.1)
-      turbolinks-source (~> 5.2)
-    turbolinks-source (5.2.0)
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
     uglifier (4.2.0)
@@ -210,13 +212,12 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rails (~> 5.2.4, >= 5.2.4.1)
-  rails-react-ssr
+  rails-react-ssr!
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
-  turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)

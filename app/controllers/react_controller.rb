@@ -15,6 +15,8 @@ class ReactController < ApplicationController
 
     if @react['redirect']
       redirect_to @react['redirect'], status: @react['status']
+    else
+      render status: @react.fetch('status', :ok)
     end
   end
 end
